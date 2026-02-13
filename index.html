@@ -1,185 +1,237 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YouTube clone</title>
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube clone</title>
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
-<header class="header">
-<div class="header-left">
-    <button class="menu-btn">☰</button>
-    <div class="logo">
-        <span class="logo-icon">▶</span>
-        <span class="logo-text">YouTube</span>
-    </div>
-</div>
-
-<div class="header-center">
-    <input type="text" placeholder="Поиск" class="search-input" />
-    <button class="search-btn">🔍</button>
-</div>
-
-<div class="header-right">
-    <button>➕</button>
-    <button>🔔</button>
-    <img src="https://placehold.ru/32 " alt="Avatar" class="avatar" />
-</div>
-</header>
-
-<div class="content">
-<aside class="sidebar">
-    <nav>
-        <a href="#" class="sidebar-link active">
-            <span class="icon">🏠</span>
-            <span>Главная</span>
-        </a>
-
-        <a href="#" class="sidebar-link">
-            <span class="icon">🔥</span>
-            <span>В тренде</span>
-        </a>
-
-        <a href="#" class="sidebar-link">
-            <span class="icon">✉️</span>
-            <span>Подписки</span>
-        </a>
-    </nav>
-<hr />
-
-<nav>
-    <a href="#" class="sidebar-link">
-        <span class="icon">📚</span>
-        <span>Библиотека</span>
-    </a>
-
-    <a href="#" class="sidebar-link">
-        <span class="icon">🕛</span>
-        <span>История</span>
-    </a>
-
-    <a href="#" class="sidebar-link">
-        <span class="icon">👍</span>
-        <span>Понравилось</span>
-    </a>
-</nav>
-</aside>
-
-<main class="main">
-    <div class="chips">
-        <div class="chips">
-            <button class="chip active">Все</button>
-            <button class="chip">Музыка</button>
-            <button class="chip">Игры</button>
-            <button class="chip">Новости</button>
-            <button class="chip">Спорт</button>
-            <button class="chip">Образование</button>
-            <button class="chip">Технологии</button>
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-btn">☰</button>
+            <div class="logo">
+                <span class="logo-icon">▶</span>
+                <span class="logo-text">YouTube</span>
+            </div>
         </div>
+
+        <div class="header-center">
+            <input type="text" placeholder="Поиск" class="search-input" />
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="header-right">
+            <button class="create-btn">➕</button>
+            <button class="notifications-btn">🔔</button>
+            <img src="https://i.pravatar.cc/32?img=11" alt="Avatar" class="avatar" />
+        </div>
+    </header>
+
+    <div class="content">
+        <aside class="sidebar">
+            <nav>
+                <a href="#" class="sidebar-link active">
+                    <span class="icon">🏠</span>
+                    <span>Главная</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="icon">🔥</span>
+                    <span>В тренде</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="icon">✉️</span>
+                    <span>Подписки</span>
+                </a>
+            </nav>
+            <hr />
+            <nav>
+                <a href="#" class="sidebar-link">
+                    <span class="icon">📚</span>
+                    <span>Библиотека</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="icon">🕛</span>
+                    <span>История</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="icon">👍</span>
+                    <span>Понравилось</span>
+                </a>
+            </nav>
+            <hr />
+            <nav>
+                <a href="#" class="sidebar-link">
+                    <span class="icon">🎬</span>
+                    <span>Ваши видео</span>
+                </a>
+                <a href="#" class="sidebar-link">
+                    <span class="icon">⌛</span>
+                    <span>Смотреть позже</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <div class="chips">
+                <button class="chip active">Все</button>
+                <button class="chip">Музыка</button>
+                <button class="chip">Игры</button>
+                <button class="chip">Новости</button>
+                <button class="chip">Образование</button>
+                <button class="chip">Технологии</button>
+                <button class="chip">Дизайн</button>
+                <button class="chip">Путешествия</button>
+            </div>
+
+            <section class="video-section">
+                <h2 class="section-title">🔥 Рекомендуемое</h2>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="Python урок" />
+                            <span class="duration">22:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=13" alt="Code School" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Обучающее видео по программированию на языке Python для начинающих</h3>
+                                <p class="channel-name">Code School</p>
+                                <p class="video-meta">890 тыс. просмотров • 3 дня назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="JavaScript" />
+                            <span class="duration">18:42</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=14" alt="WebDev Pro" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Полный курс по JavaScript - от новичка до профессионала 2026</h3>
+                                <p class="channel-name">WebDev Pro</p>
+                                <p class="video-meta">1.2 млн просмотров • 1 неделю назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="CSS Grid" />
+                            <span class="duration">15:30</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=3" alt="Design Master" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">CSS Grid и Flexbox - создаем сложные макеты за 15 минут</h3>
+                                <p class="channel-name">Design Master</p>
+                                <p class="video-meta">450 тыс. просмотров • 5 дней назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="React" />
+                            <span class="duration">35:20</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=59" alt="Frontend Today" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">React 2026 - новые хуки и возможности фреймворка</h3>
+                                <p class="channel-name">Frontend Today</p>
+                                <p class="video-meta">780 тыс. просмотров • 2 дня назад</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="video-section">
+                <h2 class="section-title">📺 С ваших подписок</h2>
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="Git" />
+                            <span class="duration">12:45</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=67" alt="DevOps Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Git и GitHub - полный разбор команд и не только</h3>
+                                <p class="channel-name">DevOps Channel</p>
+                                <p class="video-meta">210 тыс. просмотров • 6 часов назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="Docker" />
+                            <span class="duration">25:30</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=52" alt="DevOps Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Docker для разработчика - контейнеризация приложений</h3>
+                                <p class="channel-name">DevOps Channel</p>
+                                <p class="video-meta">180 тыс. просмотров • 2 дня назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="Алгоритмы" />
+                            <span class="duration">33:20</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=33" alt="CS Фундамент" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Алгоритмы и структуры данных</h3>
+                                <p class="channel-name">CS Фундамент</p>
+                                <p class="video-meta">950 тыс. просмотров • 1 неделю назад</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="#" alt="Python Advanced" />
+                            <span class="duration">48:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="https://i.pravatar.cc/36?img=12" alt="Code School" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Продвинутый Python - разбор курса на Stepik</h3>
+                                <p class="channel-name">Code School</p>
+                                <p class="video-meta">420 тыс. просмотров • 3 дня назад</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+        </main>
     </div>
 
-    <div class="video-grid">
-        <article class="video-card">
-            <div class="thumbnail">
-                <img src="https://placehold.ru/320x180" alt="Video" />
-                <span class="duration">22:15</span>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>YouTube Clone</h4>
+                <p>© 2026 Лабораторная работа №11</p>
+                <p>Тотьмянин Т.А., ИСП-232</p>
             </div>
-
-            <div class="video-info">
-                <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                <div class="video-details">
-                    <h3 class="video-title">Обучающее видео по программированию на языке Python</h3>
-                    <p class="channel-name">Code School</p>
-                    <p class="video-meta">890 тыс. просмотров • 3 дня назад</p>
-                </div>
+            <div class="footer-section">
+                <h4>О проекте</h4>
+                <p>клон YouTube</p>
+                <p>Flexbox + CSS Grid</p>
             </div>
-        </article>
-
-        <article class="video-card">
-            <div class="thumbnail">
-                <img src="https://placehold.ru/320x180" alt="Video" />
-                <span class="duration">15:30</span>
-            </div>
-
-            <div class="video-info">
-                <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                <div class="video-details">
-                    <h3 class="video-title">Как сделать свой первый сайт за 15 минут</h3>
-                    <p class="channel-name">WebDev Pro</p>
-                    <p class="video-meta">1.5 млн просмотров • 1 неделю назад</p>
-                </div>
-            </div>
-        </article>
-
-        <article class="video-card">
-            <div class="thumbnail">
-                <img src="https://placehold.ru/320x180" alt="Video" />
-                <span class="duration">8:45</span>
-            </div>
-
-            <div class="video-info">
-                <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                <div class="video-details">
-                    <h3 class="video-title">10 лайфхаков для продуктивной работы</h3>
-                    <p class="channel-name">Productvity Tips</p>
-                    <p class="video-meta">450 тыс. просмотров • 5 дней назад</p>
-                </div>
-            </div>
-        </article>
-
-        <article class="video-card">
-            <div class="thumbnail">
-                <img src="https://placehold.ru/320x180" alt="Video" />
-                <span class="duration">9:50</span>
-            </div>
-
-            <div class="video-info">
-                <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                <div class="video-details">
-                    <h3 class="video-title">Как подготовиться к собеседованию за неделю</h3>
-                    <p class="channel-name">Career Coach</p>
-                    <p class="video-meta">650 тыс. просмотров • 2 дня назад</p>
-                </div>
-            </div>
-        </article>
-
-        <article class="video-card">
-            <div class="thumbnail">
-                <img src="https://placehold.ru/320x180" alt="Video" />
-                <span class="duration">12:10</span>
-            </div>
-
-            <div class="video-info">
-                <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                <div class="video-details">
-                    <h3 class="video-title">Топ-5-фремворков для фронтенда в 2026 году</h3>
-                    <p class="channel-name">Frontend Masters</p>
-                    <p class="video-meta">780 тыс. просмотров • 3 недели назад</p>
-                </div>
-            </div>
-        </article>
-
-        <article class="video-card">
-            <div class="thumbnail">
-                <img src="https://placehold.ru/320x180" alt="Video" />
-                <span class="duration">6:30</span>
-            </div>
-
-            <div class="video-info">
-                <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                <div class="video-details">
-                    <h3 class="video-title">Как я заработал свой первый миллион</h3>
-                    <p class="channel-name">Business Insider</p>
-                    <p class="video-meta">3.4 млн просмотров • 1 месяц назад</p>
-                </div>
-            </div>
-        </article>
-    </div>
-
-</main>
-</div>
+        </div>
+    </footer>
 
 </body>
 </html>
